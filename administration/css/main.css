@@ -1,0 +1,39 @@
+.main{
+	background-color: blue;
+	background-size: cover;
+	background-position: center top;
+	padding: 75px;
+}
+.main__h3{
+	font-size: 26px;
+	font-weight: 800;
+	letter-spacing: 2.1px;
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+}
+.main__h2{
+	text-transform: uppercase;
+	font-size: 52px;
+	font-weight: 900;
+	color: #fff;
+	line-height: 1.38;
+	letter-spacing: 2px;
+	font-family: Gilroy;
+	margin: 10px 0;
+}
+.main__h2>span{
+	color: #fcb714;;
+}
+.main__link{
+	display: block;
+	margin-top: 50px;
+	border-radius: 3px;
+	background-image: linear-gradient(72deg,#00523d,#298242 50%,#52b147);
+	width: 220px;
+	line-height: 70px;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+}

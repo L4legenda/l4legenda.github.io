@@ -1,0 +1,152 @@
+.header{
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	position: relative;
+}
+.header__logo{
+	width: 64px;
+	margin-right: 10px;
+}
+.header__title{
+	margin: 0;
+	padding: 0;
+	color: #182c4f;
+	font-size: 18px;
+	line-height: 1.3;
+	transition: .3s;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.header__title > p{
+	margin: 0;
+}
+.header__navigate{
+	margin: 0;
+	margin-left: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 55%;
+}
+.header__navigate > a{
+	color: #182c4f;
+	font-size: 14px;
+	line-height: 1.8;
+	transition: .3s;
+	font-weight: 700;
+	text-decoration: none;
+	margin: 0 10px;	
+}
+.header__navigate > a:hover{
+	color: #50af46;
+}
+
+
+
+.header__authentication{
+	margin-left: auto;
+	font-size: 14px;
+	background: linear-gradient(104deg,#00523d 0,#52b147 100%);
+	border-radius: 3px;
+	box-shadow: 0 15px 15px -10px rgba(32,200,193,.3);
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 25px;
+	transition: .3s;
+	font-weight: bold;
+}
+.header__authentication > a{
+	text-decoration: none;
+	color: #fff;
+}
+.header__authentication > a:hover{
+	color: #35B270;
+}
+
+.btn__burger{
+	margin-left: auto;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	cursor: pointer;
+	display: none;
+}
+.btn__burger:hover > span:nth-child(1){
+	left: 5px;
+	transform: rotate(-25deg);
+}
+.btn__burger:hover > span:nth-child(3){
+	left: 5px;
+	transform: rotate(-25deg);
+}
+.btn__burger > span{
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -50%);
+	width: 75%;
+	height: 2px;
+	background: #000;
+	transition: .4s;
+	opacity: 1;
+}
+.btn__burger > span:nth-child(1){
+	top: 25%;
+}
+.btn__burger > span:nth-child(2){
+	top: 50%;
+}
+.btn__burger > span:nth-child(3){
+	top: 75%;
+}
+
+.btn__burger.active > span:nth-child(1){
+	left: 15%;
+	top: 50%;
+	transform: rotate(-45deg);
+}
+.btn__burger.active > span:nth-child(2){
+	opacity: 0;
+}
+.btn__burger.active > span:nth-child(3){
+	left: 15%;
+	top: 50%;
+	transform: rotate(-135deg);
+}
+@media screen and (max-width: 1000px){
+	.header__navigate{
+		display: none;
+	}
+	.header__authentication{
+		display: none;
+	}
+	.btn__burger{
+		display: block;
+	}
+	.header__navigate.show{
+		position: absolute;
+		left: 0;
+		top: calc(100% + 46px);
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+		margin: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.header__navigate.show > a{
+		display: block;
+		padding: 10px;
+	}
+	.header__authentication.show{
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		text-align: center;
+		box-sizing: border-box;
+	}
+}

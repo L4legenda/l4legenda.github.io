@@ -1,0 +1,54 @@
+@import url("fonts.css");
+@import url("default.css");
+@import url("header.css");
+@import url("footer.css");
+
+
+.news{
+	padding: 50px 25px;
+	background-color: #eef3f6;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.news__state{
+	border-radius: 3px;
+	margin: 0 25px;
+	overflow: hidden;
+}
+.news__image{
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	height: 100px;
+}
+.news__content{
+	background: #fff;
+	padding: 25px;
+	height: 100px;
+}
+.news__time{
+	margin-bottom: 5px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #6f8ea1;
+	margin: 0;
+}
+.news__title{
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.43;
+	color: #182c4f;
+}
+.popular__title{
+	background: #eef3f6;
+	margin: 0;
+	padding-left: 50px;
+	margin-bottom: -25px;
+	font-size: 22px;
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.45;
+	letter-spacing: normal;
+	color: #182c4f;
+}

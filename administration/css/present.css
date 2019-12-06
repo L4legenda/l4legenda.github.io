@@ -1,0 +1,48 @@
+.present{
+	padding: 25px 75px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.present > a{
+	text-decoration: none;
+	margin: 0 auto;
+	transition-property: color;
+	transition-duration: .1s;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.44;
+	color: #182c4f;
+	font-size: 14px;
+	padding: 30px 20px;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.present > a:hover{
+	background-image: linear-gradient(63deg,#00523d,#298242 50%,#52b147);
+	color: #fff;
+}
+.present> a > img{
+	width: 64px;
+	margin-right: 50px;
+}
+.present> a > p{
+	width: 150px;
+}
+
+@media screen and (max-width: 1000px){
+
+	.present{
+		padding: 25px 100px;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.present{
+		padding: 25px;
+		
+	}
+}

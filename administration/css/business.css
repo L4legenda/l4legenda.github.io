@@ -1,0 +1,15 @@
+.business{
+	padding: 50px;
+}
+.business__title{
+  font-family: Arial, sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+  color: #182c4f;
+}
+.business__slider{
+	margin-top: 10px;
+}
+.business__image{
+	width: 100%;
+}

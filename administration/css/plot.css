@@ -1,0 +1,32 @@
+.plot{
+	padding: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-size: cover;
+	background-position: center top;
+}
+.plot__content{
+}
+.plot__title{
+	color: #fff;
+	font-family: Arial;
+	font-size: 44px;	
+	font-weight: 800;
+	margin-bottom: 50px;
+	text-shadow: .5px .5px 1px #065102;
+}
+.plot__link{
+	border-radius: 3px;
+	background-image: linear-gradient(76deg,#00523d,#298242 50%,#52b147);
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 26px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	padding: 25px 30px;
+	display: inline-block;
+
+}
