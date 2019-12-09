@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Тест</title>
+	<link rel="stylesheet" href="css/style.css">
+	 <link rel="icon" href="logo2_1.png" type="image/png" sizes="16x32"> 
+</head>
+
+<body>
+	<script type="text/javascript" src="vue.min.js"></script>
+	<div class="radial-1"></div>
+	<div class="radial-2"></div>
+	<div class="radial-3"></div>
+
+	<img src="logo3.png" alt="logo" class="logo">
+
+	
+	<div id="app">
+			<div class="start display" v-if="page == 0">
+				<h2>Здравствуйте!</h2>
+				<p>
+					Рады приветствовать Вас в интерактивной обучающей игре "Мой Бизнес".
+				</p>
+				<p>
+					Если Вы планируете открыть свое дело, то добро пожаловать!
+				</p>
+				<button @click="next()">Вперед!</button>
+			</div>
+
+			<div class="registr display" v-if="page == 1">
+				<h2>
+					Представьтесь пожалуйста
+				</h2>
+				<div>
+					<label>Фамилия</label>
+					<input type="text" placeholder="Васин" v-model="user.name">
+				</div>
+				<div>
+					<label>Имя</label>
+					<input type="text" placeholder="Вася" v-model="user.family">
+				</div>
+				<div>
+					<label>Отчество</label>
+					<input type="text" placeholder="Васильевич" v-model="user.patronymic">
+				</div>
+				<button class="btn-red" @click="registr()">Продолжить</button>
+			</div>
+
+			<div class="qustions display" v-if="page == 2">
+				<div v-for="(v, i) in quest" :key="i" v-if="isQ == i">
+					<h2>{{ v.q }}</h2>
+					<div class="qustions__btn">
+						<button class="btn-red" @click="nextQ('ИП')">ИП</button>
+						<button class="btn-red" @click="nextQ('ООО')">ООО</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="end display" v-if="page == 3">
+				<div class="end__ball">
+					<h2>{{ ball }}</h2>
+					<p>баллов</p>
+				</div>
+				<p class="end__desc">{{ user.name }} - {{ desc }}</p>
+				<div class="end__btn">
+					<a href="https://www.nalog.ru/create_business/" target="_blank" class="btn-red">Изучить</a>
+				</div>
+				
+			</div>
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+
+</html>

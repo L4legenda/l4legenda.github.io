@@ -1,0 +1,14 @@
+.registr > div{
+	margin: 15px 0;
+}
+
+.registr label{
+	display: block;
+	padding-bottom: 10px;
+}
+
+.registr input{
+	width: 100%;
+	padding: 7px 15px;
+	border: 1px solid #aeaeae;
+}

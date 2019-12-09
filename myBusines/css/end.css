@@ -1,0 +1,18 @@
+.end__ball{
+	text-align: center;
+	font-size: 32px;
+}
+.end__ball > *{
+	margin: 0;
+}
+.end__desc{
+	text-align: center;
+	margin-bottom: 25px;
+}
+.end__btn{
+	text-align: center;
+}
+.end__btn a{
+	display: inline-block;
+	text-decoration: none;
+}

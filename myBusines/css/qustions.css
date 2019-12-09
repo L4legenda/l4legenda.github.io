@@ -1,0 +1,7 @@
+.qustions__btn button{
+	margin: auto;
+	width: 150px;
+}
+.qustions__btn{
+	display: flex;
+}
