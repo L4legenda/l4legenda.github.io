@@ -1,0 +1,86 @@
+.rhombus{
+	position: absolute;
+	background:	#00F1C9;
+	border-radius: 12px;
+	z-index: -1;
+	&-big{
+		width: 600px;
+		height: 600px;
+	}
+	&-normal{
+		width: 200px;
+		height: 200px;
+	}
+	&-small{
+		width: 100px;
+		height: 100px;
+	}
+}
+
+
+.el-1{
+	top: -75px;
+	left: 0px;
+}
+
+.el-2{
+	top: 0%;
+	left: 75%;
+}
+.el-3{
+	top: 25%;
+	left: 0px;
+}
+.el-4{
+	top: 30%;
+	left: 75%;
+}
+.el-5{
+	top: 40%;
+	left: 25%;
+}
+.el-6{
+	top: 45%;
+	left: 85%;
+}
+.el-7{
+	top: 50%;
+	left: 10%;
+}
+
+.el-8{
+	top: 55%;
+	left: 25%;
+}
+.el-9{
+	top: 60%;
+	left: 80%;
+}
+.el-10{
+	top: 70%;
+	left: 60%;
+}
+.el-11{
+	top: 80%;
+	left: 35%;
+}
+.el-12{
+	top: 90%;
+	left: 60%;
+}
+.el-13{
+	top: 100%;
+	left: 75%;
+}
+.el-14{
+	top: 95%;
+	left: 45%;
+}
+.el-15{
+	top: 120%;
+	left: 15%;
+}
+.el-16{
+	top: 125%;
+	left: 25%;
+}
